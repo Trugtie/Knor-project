@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Team Knor</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="/styles/style.css" rel="stylesheet">
+    <link rel="icon" href="/images/Letter_K_black_Icon_32.png">
+    <script type="text/javascript" src="/js/scripts.js"></script>
+</head>
+
+<body>
+    <div id="container">
+        <div id="header">
+            <h1>Team Knor</h1>
+            <video src="/videos/banner1.webm" autoplay loop></video>
+        </div>
+        <div id="navbar">
+            <img src="images/layout/threelines.png" id="threeline" onclick="hienThiMenu();">
+            <ul id="menulist">
+                <li><a href="/home.html"><img src="images/layout/Jade_Emperor_profileicon.png" />Trang chủ</a></li>
+                <li><a href="/news.html"><img src="images/layout/Team_Builder_Mage_profileicon.png" /> Tin tức</a></li>
+                <li><a href="/member.html"><img src="images/layout/Power_Up_profileicon.png" /> Thành viên</a></li>
+                <li class="dropdow"><a href="/media.html"><img src="images/layout/Advanced_AI_profileicon.png" />
+                        Media</a>
+                    <ul class="dropdowlist">
+                        <li><a href="/media.html"><img src="/images/layout/img.png">Images</a></li>
+                        <li><a href="/media.html"><img src="/images/layout/videos.png">Video</a></li>
+                        <li><a href="#amnhac"><img src="/images/layout/music.png">Music</a></li>
+                    </ul>
+                </li>
+                <li><a href="/shop.html" style="color: red;"><img src="images/layout/shop.png" />Shop</a></li>
+                <li><a href="/login.html"><img src="images/layout/Champie_Yasuo_profileicon.png" /> Đăng nhập</a></li>
+                <li><a href="/aboutus.html"><img src="images/layout/Hextech_Cup_16_Team_profileicon.png" />About Us</a>
+                </li>
+                <li><a href="#">login</a></li>
+                <li><input type="text" placeholder="search.."></li>
+                <li><button type="button"> search</button></li>
+            </ul>
+        </div>
+        <div id="content">
+            <div id="content_left">
+                <div class="box">
+                    <div class="box_title">Các thành viên</div>
+                    <div class="box_content">
+                        <ul>
+                            <li class="box_content_header">Chủ chốt</li>
+                            <li><a href=""> <img src="images/ranked-positions/Position_Diamond-Mid.png" />
+                                    &nbsp;&nbsp;Bé Won Gây Xoắn</a></li>
+                            <li><a href=""><img src="images/ranked-positions/Position_Diamond-Mid.png" /> &nbsp;&nbsp;Bé
+                                    Gray Gây Mê</a></li>
+                            <li><a href=""> <img src="images/ranked-positions/Position_Diamond-Bot.png" />
+                                    &nbsp;&nbsp;Bé Quấy Gây Bão</a></li>
+                            <li><a href=""> <img src="images/ranked-positions/Position_Diamond-Support.png" />
+                                    &nbsp;&nbsp;Bé Phúc Gây Béo</a></li>
+                            <li><a href=""> <img src="images/ranked-positions/Position_Diamond-Top.png" />
+                                    &nbsp;&nbsp;Bé Hưng Gây Hứng</a></li>
+                            <li class="box_content_header">Dự bị</li>
+                            <li><a href=""> <img src="images/ranked-positions/Position_Diamond-Top.png" />
+                                    &nbsp;&nbsp;Bé Văn Gây Sốc</a></li>
+                            <li><a href=""> <img src="images/ranked-positions/Position_Diamond-Top.png" />
+                                    &nbsp;&nbsp;Bé Test Gây Neft</a></li>
+                            <li><a href=""> <img src="images/ranked-positions/Position_Diamond-Support.png" />
+                                    &nbsp;&nbsp;Bé Lâm Gây Sấm</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="box_title">Logo Team</div>
+                    <div class="box_content">
+                        <img src="images/layout/teamlogo2.jpg">
+                    </div>
+                </div>
+            </div>
+            <div id="content_center">
+                <div class="center_part">
+                    <div class="center_content_header">Shop</div>
+                    <div class="center_content_shop">
+                        <div class="product">
+                            <div class="product_img"><img src="/images/Shop/Tshirt.PNG" alt=""></div>
+                            <div class="product_content">
+                                <div class="product_info">Knor T-Shirt</div>
+                                <div class="product_price">50.000 đ</div>
+                                <!-- Trigger/Open The Modal -->
+                                <button id="myBtn">Purchase</button>
+
+                                <!-- The Modal -->
+                                <div id="myModal" class="modal">
+
+                                    <!-- Modal content -->
+                                    <div class="modal-content">
+                                        <span class="close">&times;</span>
+                                        <table style="margin: 0;padding: 0;">
+                                            <tr>
+                                                <td style="position: relative; padding: 0;">
+                                                    <div class="mySlides" style="display: block;">
+                                                        <img src="/images/Shop/Tshirt.PNG" style="width:100%">
+                                                    </div>
+
+                                                    <div class="mySlides">
+                                                        <img src="/images/Shop/Tshirt2.PNG" style="width:100%">
+                                                    </div>
+
+                                                    <div class="mySlides">
+                                                        <img src="/images/Shop/Tshirt3.PNG" style="width:100%">
+                                                    </div>
+
+
+                                                    <a class="prev" onclick="plusSlides(-1)">❮</a>
+                                                    <a class="next" onclick="plusSlides(1)">❯</a>
+
+                                                    <div class="row">
+                                                        <div class="column1">
+                                                            <img class="demo cursor" src="/images/Shop/Tshirt.PNG"
+                                                                style="width:100%" onclick="currentSlide(1)">
+                                                        </div>
+                                                        <div class="column1">
+                                                            <img class="demo cursor" src="/images/Shop/Tshirt2.PNG"
+                                                                style="width:100%" onclick="currentSlide(2)">
+                                                        </div>
+                                                        <div class="column1">
+                                                            <img class="demo cursor" src="/images/Shop/Tshirt3.PNG"
+                                                                style="width:100%" onclick="currentSlide(3)">
+                                                        </div>
+                                                    </div>
+                                    </div>
+                                    </td>
+                                    <td style="padding:0;">
+                                        <table class="modal_table">
+                                            <tr>
+                                                <td colspan="2"
+                                                    style="text-align: center; color: red; font-size: 25px;font-weight: bold;">
+                                                    Thông tin</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Sẩm phẩm:</td>
+                                                <td>Knor T-Shirt</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    Thương hiêu:
+                                                </td>
+                                                <td>Knor</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Tình trạng:</td>
+                                                <td>Vẫn còn</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Size:</td>
+                                                <td><input type="radio" name="size">S<input type="radio"
+                                                        name="size">M<input type="radio" name="size">L<input
+                                                        type="radio" name="size">XL<input type="radio" name="size">XXL
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2" style="text-align: center;">
+                                                    <button type="button"
+                                                        style="background-color:orangered;color: white;line-height: 4vw; width: 7vw;"
+                                                        onclick="alert('Đặt thành công')">Đặt mua</button>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                    </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="product_img"><img src="/images/Shop/swear.PNG" alt=""></div>
+                        <div class="product_content">
+                            <div class="product_info">Knor Swear</div>
+                            <div class="product_price">150.000 đ</div>
+                            <!-- Trigger/Open The Modal -->
+                            <button id="myBtn2">Purchase</button>
+
+                            <!-- The Modal -->
+                            <div id="myModal2" class="modal">
+
+                                <!-- Modal content -->
+                                <div class="modal-content">
+                                    <span class="close">&times;</span>
+                                    <table style="margin: 0;padding: 0;">
+                                        <tr>
+                                            <td style="position: relative; padding: 0;">
+                                                <div class="mySlides2" style="display: block;">
+                                                    <img src="/images/Shop/swear.PNG" style="width:100%">
+                                                </div>
+
+                                                <div class="mySlides2">
+                                                    <img src="/images/Shop/swear2.PNG" style="width:100%">
+                                                </div>
+
+                                                <div class="mySlides2">
+                                                    <img src="/images/Shop/swear3.PNG" style="width:100%">
+                                                </div>
+
+
+                                                <a class="prev" onclick="plusSlides2(-1)">❮</a>
+                                                <a class="next" onclick="plusSlides2(1)">❯</a>
+
+                                                <div class="row">
+                                                    <div class="column1">
+                                                        <img class="demo cursor2" src="/images/Shop/swear.PNG"
+                                                            style="width:100%" onclick="currentSlide2(1)">
+                                                    </div>
+                                                    <div class="column1">
+                                                        <img class="demo cursor2" src="/images/Shop/swear2.PNG"
+                                                            style="width:100%" onclick="currentSlide2(2)">
+                                                    </div>
+                                                    <div class="column1">
+                                                        <img class="demo cursor2" src="/images/Shop/swear3.PNG"
+                                                            style="width:100%" onclick="currentSlide2(3)">
+                                                    </div>
+                                                </div>
+                                </div>
+                                </td>
+                                <td style="padding:0;">
+                                    <table class="modal_table">
+                                        <tr>
+                                            <td colspan="2"
+                                                style="text-align: center; color: red; font-size: 25px;font-weight: bold;">
+                                                Thông tin</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Sẩm phẩm:</td>
+                                            <td>Knor Swear</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                Thương hiêu:
+                                            </td>
+                                            <td>Knor</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Tình trạng:</td>
+                                            <td>Vẫn còn</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Size:</td>
+                                            <td><input type="radio" name="size">S<input type="radio" name="size">M<input
+                                                    type="radio" name="size">L<input type="radio" name="size">XL<input
+                                                    type="radio" name="size">XXL</td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2" style="text-align: center;">
+                                                <button type="button"
+                                                    style="background-color:orangered;color: white;line-height: 4vw; width: 7vw;"
+                                                    onclick="alert('Đặt thành công')">Đặt mua</button>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="product_img"><img src="/images/Shop/hoodie.PNG" alt=""></div>
+                    <div class="product_content">
+                        <div class="product_info">Knor Hoodie</div>
+                        <div class="product_price">200.000 đ</div>
+                        <!-- Trigger/Open The Modal -->
+                        <button id="myBtn3">Purchase</button>
+
+                        <!-- The Modal -->
+                        <div id="myModal3" class="modal">
+
+                            <!-- Modal content -->
+                            <div class="modal-content">
+                                <span class="close">&times;</span>
+                                <table style="margin: 0;padding: 0;">
+                                    <tr>
+                                        <td style="position: relative; padding: 0;">
+                                            <div class="mySlides3" style="display: block;">
+                                                <img src="/images/Shop/hoodie.PNG" style="width:100%">
+                                            </div>
+
+                                            <div class="mySlides3">
+                                                <img src="/images/Shop/hoodie12.PNG" style="width:100%">
+                                            </div>
+
+                                            <div class="mySlides3">
+                                                <img src="/images/Shop/hoodie13.PNG" style="width:100%">
+                                            </div>
+
+
+                                            <a class="prev" onclick="plusSlides3(-1)">❮</a>
+                                            <a class="next" onclick="plusSlides3(1)">❯</a>
+
+                                            <div class="row">
+                                                <div class="column1">
+                                                    <img class="demo cursor3" src="/images/Shop/hoodie.PNG"
+                                                        style="width:100%" onclick="currentSlide3(1)">
+                                                </div>
+                                                <div class="column1">
+                                                    <img class="demo cursor3" src="/images/Shop/hoodie12.PNG"
+                                                        style="width:100%" onclick="currentSlide3(2)">
+                                                </div>
+                                                <div class="column1">
+                                                    <img class="demo cursor3" src="/images/Shop/hoodie13.PNG"
+                                                        style="width:100%" onclick="currentSlide3(3)">
+                                                </div>
+                                            </div>
+                            </div>
+                            </td>
+                            <td style="padding:0;">
+                                <table class="modal_table">
+                                    <tr>
+                                        <td colspan="2"
+                                            style="text-align: center; color: red; font-size: 25px;font-weight: bold;">
+                                            Thông tin</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Sẩm phẩm:</td>
+                                        <td>Knor Hoodie</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Thương hiêu:
+                                        </td>
+                                        <td>Knor</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Tình trạng:</td>
+                                        <td>Vẫn còn</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Size:</td>
+                                        <td><input type="radio" name="size">S<input type="radio" name="size">M<input
+                                                type="radio" name="size">L<input type="radio" name="size">XL<input
+                                                type="radio" name="size">XXL</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2" style="text-align: center;">
+                                            <button type="button"
+                                                style="background-color:orangered;color: white;line-height: 4vw; width: 7vw;"
+                                                onclick="alert('Đặt thành công')">Đặt mua</button>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                            </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div style="clear: left;"></div>
+            <div class="product">
+                <div class="product_img"><img src="/images/Shop/hoodie2.PNG" alt=""></div>
+                <div class="product_content">
+                    <div class="product_info">Knor Mixed-color Hoodie</div>
+                    <div class="product_price">200.000 đ</div>
+                    <!-- Trigger/Open The Modal -->
+                    <button id="myBtn4">Purchase</button>
+
+                    <!-- The Modal -->
+                    <div id="myModal4" class="modal">
+
+                        <!-- Modal content -->
+                        <div class="modal-content">
+                            <span class="close">&times;</span>
+                            <table style="margin: 0;padding: 0;">
+                                <tr>
+                                    <td style="position: relative; padding: 0;">
+                                        <div class="mySlides4" style="display: block;">
+                                            <img src="/images/Shop/hoodie2.PNG" style="width:100%">
+                                        </div>
+
+                                        <div class="mySlides4">
+                                            <img src="/images/Shop/hoodie22.PNG" style="width:100%">
+                                        </div>
+
+                                        <div class="mySlides4">
+                                            <img src="/images/Shop/hoodie23.PNG" style="width:100%">
+                                        </div>
+
+
+                                        <a class="prev" onclick="plusSlides4(-1)">❮</a>
+                                        <a class="next" onclick="plusSlides4(1)">❯</a>
+
+                                        <div class="row">
+                                            <div class="column1">
+                                                <img class="demo cursor4" src="/images/Shop/hoodie2.PNG" style="width:100%"
+                                                    onclick="currentSlide4(1)">
+                                            </div>
+                                            <div class="column1">
+                                                <img class="demo cursor4" src="/images/Shop/hoodie22.PNG" style="width:100%"
+                                                    onclick="currentSlide4(2)">
+                                            </div>
+                                            <div class="column1">
+                                                <img class="demo cursor4" src="/images/Shop/hoodie23.PNG" style="width:100%"
+                                                    onclick="currentSlide4(3)">
+                                            </div>
+                                        </div>
+                        </div>
+                        </td>
+                        <td style="padding:0;">
+                            <table class="modal_table">
+                                <tr>
+                                    <td colspan="2"
+                                        style="text-align: center; color: red; font-size: 25px;font-weight: bold;">Thông
+                                        tin</td>
+                                </tr>
+                                <tr>
+                                    <td>Sẩm phẩm:</td>
+                                    <td>Knor Mixed-color Hoodie</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Thương hiêu:
+                                    </td>
+                                    <td>Knor</td>
+                                </tr>
+                                <tr>
+                                    <td>Tình trạng:</td>
+                                    <td>Vẫn còn</td>
+                                </tr>
+                                <tr>
+                                    <td>Size:</td>
+                                    <td><input type="radio" name="size">S<input type="radio" name="size">M<input
+                                            type="radio" name="size">L<input type="radio" name="size">XL<input
+                                            type="radio" name="size">XXL</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2" style="text-align: center;">
+                                        <button type="button"
+                                            style="background-color:orangered;color: white;line-height: 4vw; width: 7vw;"
+                                            onclick="alert('Đặt thành công')">Đặt mua</button>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                        </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="product">
+            <div class="product_img"><img src="/images/Shop/cap.PNG" alt=""></div>
+            <div class="product_content">
+                <div class="product_info">Knor Cap</div>
+                <div class="product_price">30.000 đ</div>
+                <!-- Trigger/Open The Modal -->
+                <button id="myBtn5">Purchase</button>
+
+                <!-- The Modal -->
+                <div id="myModal5" class="modal">
+
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <table style="margin: 0;padding: 0;">
+                            <tr>
+                                <td style="position: relative; padding: 0;">
+                                    <div class="mySlides5" style="display: block;">
+                                        <img src="/images/Shop/cap.PNG" style="width:100%">
+                                    </div>
+
+                                    <div class="mySlides5">
+                                        <img src="/images/Shop/cap2.PNG" style="width:100%">
+                                    </div>
+
+                                    <div class="mySlides5">
+                                        <img src="/images/Shop/cap3.PNG" style="width:100%">
+                                    </div>
+
+
+                                    <a class="prev" onclick="plusSlides5(-1)">❮</a>
+                                    <a class="next" onclick="plusSlides5(1)">❯</a>
+
+                                    <div class="row">
+                                        <div class="column1">
+                                            <img class="demo cursor5" src="/images/Shop/cap.PNG" style="width:100%"
+                                                onclick="currentSlide5(1)">
+                                        </div>
+                                        <div class="column1">
+                                            <img class="demo cursor5" src="/images/Shop/cap2.PNG" style="width:100%"
+                                                onclick="currentSlide5(2)">
+                                        </div>
+                                        <div class="column1">
+                                            <img class="demo cursor5" src="/images/Shop/cap3.PNG" style="width:100%"
+                                                onclick="currentSlide5(3)">
+                                        </div>
+                                    </div>
+                    </div>
+                    </td>
+                    <td style="padding:0;">
+                        <table class="modal_table">
+                            <tr>
+                                <td colspan="2"
+                                    style="text-align: center; color: red; font-size: 25px;font-weight: bold;">Thông tin
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Sẩm phẩm:</td>
+                                <td>Knor T-Shirt</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Thương hiêu:
+                                </td>
+                                <td>Knor Cap</td>
+                            </tr>
+                            <tr>
+                                <td>Tình trạng:</td>
+                                <td>Vẫn còn</td>
+                            </tr>
+                            <tr>
+                                <td>Size:</td>
+                                <td><input type="radio" name="size">S<input type="radio" name="size">M<input
+                                        type="radio" name="size">L<input type="radio" name="size">XL<input type="radio"
+                                        name="size">XXL</td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" style="text-align: center;">
+                                    <button type="button"
+                                        style="background-color:orangered;color: white;line-height: 4vw; width: 7vw;"
+                                        onclick="alert('Đặt thành công')">Đặt mua</button>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                    </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+    </div>
+    </div>
+    <div id="content_right">
+        <div class="box">
+            <div class="box_title" id="amnhac">Âm nhạc</div>
+            <div class="box_content">
+                <iframe src="https://www.youtube.com/embed/videoseries?list=PLDfKAXSi6kUZ50C3WqCNSR4CmIicivrqG"
+                    frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div style="clear: both;"></div>
+    <div id="footer">
+        Copyright&copy; BeWonGayXoan<br />
+    </div>
+    </div>
+    <script type="text/javascript" src="/js/scriptmodal.js"></script>
+    <button onclick="topFunction()" id="topBtn" title="Go to top">Lên</button>
+    <script type="text/javascript" src="/js/scriptsbacktotop.js"></script>
+</body>
+
+</html>
